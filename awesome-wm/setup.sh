@@ -12,7 +12,8 @@ sudo apt install make xorg libxcb-xfixes0-dev sddm awesome -y
 ## Added sddm themes
 # sudo apt install qml-module-qtquick-window2 qml-module-qtquick-layouts qml-module-qtquick-controls2 libqt6svg6
 sudo cp -r ${builddir}/catppuccin-macchiato /usr/share/sddm/themes/
-sudo touch /etc/sddm.conf
+# Added theme to sddm.conf
+sudo cp -f ${builddir}/sddm.conf /etc/sddm.conf
 
 # Config Sddm to run on next login
 sudo dpkg-reconfigure sddm
@@ -28,4 +29,4 @@ fi
 # Setup Config files
 git clone https://github.com/tobi9090/dotfiles.git /home/$username/dotfiles
 git clone https://github.com/tobi9090/fonts.git /home/$username/.local/share/fonts
-bash /home/$username/dotfiles/update.sh
+bash /home/$username/dotfiles/update.sh --all
