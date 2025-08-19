@@ -22,7 +22,7 @@ sudo apt update
 sudo apt upgrade
 
 # Install APT packages
-sudo apt install nitrogen lxappearance alacritty btop rofi picom wget vim unzip network-manager wezterm pulseaudio pavucontrol pavucontrol fzf mpv virt-manager qemu-system-x86 qemu-utils libvirt-daemon-system p7zip-full xclip lua5.1 ripgrep winehq-stable neovim lutris qimgv winetricks lazygit -y
+sudo apt install nitrogen lxappearance alacritty btop rofi picom wget vim unzip network-manager pulseaudio pavucontrol pavucontrol fzf mpv virt-manager qemu-system-x86 qemu-utils libvirt-daemon-system p7zip-full xclip lua5.1 ripgrep winehq-stable neovim lutris qimgv winetricks lazygit
 
 # Install outside for APT packages
 cd "/home/$username/download"
