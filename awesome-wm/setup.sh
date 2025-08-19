@@ -14,9 +14,9 @@ sudo apt install make xorg lightdm awesome -y
 sudo dpkg-reconfigure lightdm
 
 # Setup x11 TearFree
-if [ -d "/etc/X11/xorg.conf.d" ]; then
-   sudo cp -f ${builddir}/20-amd.conf /etc/X11/xorg.conf.d/
-fi
+# if [ -d "/etc/X11/xorg.conf.d" ]; then
+#    sudo cp -f ${builddir}/20-amd.conf /etc/X11/xorg.conf.d/
+# fi
 
 # Setup Config files
 git clone https://github.com/tobi9090/dotfiles.git /home/$username/dotfiles
