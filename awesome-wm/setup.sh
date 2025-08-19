@@ -7,7 +7,7 @@ sudo apt update
 sudo apt upgrade -y
 
 # Install packges for desktop setup
-sudo apt install make xorg lightdm awesome -y
+sudo apt install make xorg lightdm slick-greeter awesome -y
 
 sudo cp -f ${builddir}/lightdm.conf /etc/lightdm/lightdm.conf
 sudo cp -f ${builddir}/slick-greeter.conf /etc/lightdm/slick-greeter.conf
