@@ -11,5 +11,14 @@ mkdir -p "/home/$username/git-repos"
 mkdir -p "/home/$username/.local/share/fonts"
 
 # Clone github repo
-git clone https://github.com/tobi9090/dotfiles.git /home/$username/dotfiles
-git clone https://github.com/tobi9090/fonts.git /home/$username/.local/share/fonts
+if [[ -d "/home/$username/dotfiles" ]]; then
+    git pull /home/$username/dotfiles
+else
+    git clone https://github.com/tobi9090/dotfiles.git /home/$username/dotfiles
+fi
+
+if [[ -d "/home/$username/.local/share/fonts" ]]; then
+    git pull /home/$username/.local/share/fonts
+else
+    git clone https://github.com/tobi9090/fonts.git /home/$username/.local/share/fonts
+fi

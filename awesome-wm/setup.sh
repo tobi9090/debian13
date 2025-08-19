@@ -20,9 +20,8 @@ sudo dpkg-reconfigure lightdm
 # fi
 
 # Setup Config files
-git clone https://github.com/tobi9090/dotfiles.git /home/$username/dotfiles
-git clone https://github.com/tobi9090/fonts.git /home/$username/.local/share/fonts
+# git clone https://github.com/tobi9090/dotfiles.git /home/$username/dotfiles
+# git clone https://github.com/tobi9090/fonts.git /home/$username/.local/share/fonts
 bash /home/$username/dotfiles/update.sh --all
-
 sudo cp -f /home/$username/dotfiles/Wallpapers/after_sunset_landscape_2_by_rmradev_dfenf9g.jpg /usr/share/wallpapers/login.jpg
 
