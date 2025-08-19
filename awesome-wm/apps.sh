@@ -4,6 +4,8 @@ username=$(id -u -n 1000)
 # Wezterm
 curl -fsSL https://apt.fury.io/wez/gpg.key | sudo gpg --yes --dearmor -o /usr/share/keyrings/wezterm-fury.gpg
 echo 'deb [signed-by=/usr/share/keyrings/wezterm-fury.gpg] https://apt.fury.io/wez/ * *' | sudo tee /etc/apt/sources.list.d/wezterm.list
+sudo chmod 644 /usr/share/keyrings/wezterm-fury.gpg
+
 
 # VsCode
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
@@ -16,17 +18,11 @@ sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-bui
 # For trixie
 sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/trixie/winehq-trixie.sources
 
-# LazyGit
-LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
-curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
-tar xf lazygit.tar.gz lazygit
-sudo install lazygit /usr/local/bin
-
 sudo apt update -y
 sudo apt upgrade -y
 
 # Install APT packages
-sudo apt install nitrogen lxappearance alacritty btop rofi picom wget neofetch vim unzip libxcb-xfixes0-dev network-manager wezterm pulseaudio pavucontrol pavucontrol code fzf mpv virt-manager qemu-system-x86 qemu-utils libvirt-daemon-system p7zip-full xclip lua5.1 ripgrep winehq-stable neovim lutris qimgv winetricks -y
+sudo apt install nitrogen lxappearance alacritty btop rofi picom wget neofetch vim unzip libxcb-xfixes0-dev network-manager wezterm pulseaudio pavucontrol pavucontrol code fzf mpv virt-manager qemu-system-x86 qemu-utils libvirt-daemon-system p7zip-full xclip lua5.1 ripgrep winehq-stable neovim lutris qimgv winetricks lazygit -y
 
 # Install outside for APT packages
 cd "/home/$username/download"
