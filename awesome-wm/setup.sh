@@ -7,8 +7,8 @@ sudo apt update
 sudo apt upgrade -y
 
 # Install packges for desktop setup
-sudo apt install make xorg libxcb-xfixes0-dev libpam-systemd awesome -y
-sudo apt install --no-install-recommends sddm -y
+sudo apt install make xorg libxcb-xfixes0-dev sddm awesome -y
+# sudo apt install --no-install-recommends sddm -y
 
 ## Added sddm themes
 # sudo apt install qml-module-qtquick-window2 qml-module-qtquick-layouts qml-module-qtquick-controls2 libqt6svg6
