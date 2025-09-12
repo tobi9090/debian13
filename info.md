@@ -13,6 +13,14 @@
 ## Added label to ext4 disk 
 ### sudo e2label /dev/<disk-name> <label-name>
 
+# linux-tkg Kernel
+web => https://github.com/Frogging-Family/linux-tkg
+
+## Install
+git clone https://github.com/Frogging-Family/linux-tkg.git
+cd linux-tkg
+./install.sh install
+
 # Install Steam
 <## Follow Debian Steam guide at https://wiki.debian.org/Steam
 ## Gamemode add < gamemoderun %command% > to steam Launch Options

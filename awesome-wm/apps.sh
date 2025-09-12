@@ -10,7 +10,7 @@ sudo apt update
 sudo apt upgrade
 
 # Install APT packages
-sudo apt install nitrogen gcc lxappearance alacritty btop rofi picom wget vim unzip network-manager pulseaudio pamixer pavucontrol fzf mpv virt-manager qemu-system-x86 qemu-utils libvirt-daemon-system p7zip-full xclip lua5.1 ripgrep wine neovim lutris qimgv winetricks lazygit
+sudo apt install gamemode mangohud nitrogen gcc lxappearance alacritty btop rofi picom wget vim unzip network-manager pulseaudio pamixer pavucontrol fzf mpv virt-manager qemu-system-x86 qemu-utils libvirt-daemon-system p7zip-full xclip lua5.1 ripgrep wine neovim lutris qimgv winetricks lazygit
 
 # Install outside for APT packages
 cd "/home/$username/download"
