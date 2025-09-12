@@ -15,7 +15,7 @@
 
 # linux-tkg Kernel
 web => https://github.com/Frogging-Family/linux-tkg
-
+good options => https://www.youtube.com/watch?v=M29Z7ymCNrE
 ## Install
 git clone https://github.com/Frogging-Family/linux-tkg.git
 cd linux-tkg
