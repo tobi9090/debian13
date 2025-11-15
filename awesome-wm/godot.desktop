@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Godot 4.5
+Icon=/home/tobias/.local/share/icons/godot/godot.svg
+Exec=/home/tobias/.local/share/applications/Godot_v4.5-stable_linux.x86_64

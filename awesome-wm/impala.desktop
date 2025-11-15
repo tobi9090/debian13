@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+Version=1.0
+Name=Impala
+Icon=/home/tobias/pictures/wifi-icon.jpg
+Exec=/home/tobias/.cargo/bin/impala

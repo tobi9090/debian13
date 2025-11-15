@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+Version=1.0
+Name=Yazi
+Icon=/home/tobias/pictures/yazi.png
+Exec=/home/tobias/.cargo/bin/yazi
